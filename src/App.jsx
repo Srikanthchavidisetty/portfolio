@@ -532,7 +532,7 @@ export default function App() {
           <div className="contact-buttons">
 
             <a
-              href="mailto:your-email@gmail.com"
+              href="mailto:srikanthchavidisetty@gmail.com"
               className="btn custom-primary-btn"
             >
               Email Me
@@ -548,7 +548,7 @@ export default function App() {
             </a>
 
             <a
-              href="https://www.linkedin.com/"
+              href="https://www.linkedin.com/in/chavidisetty-srikanth-411b082b3"
               target="_blank"
               rel="noreferrer"
               className="btn custom-outline-btn"
