@@ -1,0 +1,693 @@
+/* =====================================================
+   GLOBAL
+===================================================== */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #ffffff;
+  color: #172033;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+/* =====================================================
+   NAVBAR
+===================================================== */
+
+.navbar {
+  min-height: 76px;
+  background: #ffffff !important;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.portfolio-logo {
+  color: #5146e5 !important;
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.navbar .nav-link {
+  color: #374151 !important;
+  font-size: 17px;
+  margin-left: 20px;
+  padding: 10px 0;
+  transition: all 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+  color: #5146e5 !important;
+}
+
+.navbar .nav-link.active {
+  color: #5146e5 !important;
+}
+
+
+/* =====================================================
+   HERO SECTION
+===================================================== */
+
+.hero-section {
+  background: #ffffff;
+  overflow: hidden;
+}
+
+.hero-content {
+  max-width: 700px;
+  padding-top: 20px;
+}
+
+
+/* Small title */
+
+.hero-small-title {
+  color: #5146e5;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 18px;
+}
+
+
+/* Main title */
+
+.hero-title {
+  color: #111827;
+  font-size: clamp(42px, 5vw, 68px);
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.hero-title span {
+  color: #111827;
+}
+
+
+/* Developer title */
+
+.hero-subtitle {
+  color: #5146e5;
+  font-size: clamp(27px, 3vw, 40px);
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 18px;
+}
+
+
+/* Description */
+
+.hero-description {
+  max-width: 650px;
+  color: #6b7280;
+  font-size: 19px;
+  line-height: 1.7;
+  margin-bottom: 0;
+}
+
+
+/* =====================================================
+   HERO BUTTONS
+===================================================== */
+
+.hero-buttons {
+  display: flex;
+  gap: 18px;
+  margin-top: 30px;
+}
+
+.custom-primary-btn {
+  background: #5146e5;
+  border-color: #5146e5;
+  color: #ffffff;
+
+  padding: 13px 28px;
+
+  font-size: 17px;
+  border-radius: 8px;
+
+  transition: all 0.3s ease;
+}
+
+.custom-primary-btn:hover {
+  background: #4038c9;
+  border-color: #4038c9;
+  transform: translateY(-3px);
+}
+
+.custom-outline-btn {
+  color: #5146e5;
+  border-color: #5146e5;
+
+  padding: 13px 28px;
+
+  font-size: 17px;
+  border-radius: 8px;
+
+  transition: all 0.3s ease;
+}
+
+.custom-outline-btn:hover {
+  background: #5146e5;
+  border-color: #5146e5;
+  color: #ffffff;
+
+  transform: translateY(-3px);
+}
+
+
+/* =====================================================
+   PROFILE IMAGE
+===================================================== */
+
+.profile-wrapper {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 20px;
+}
+
+.profile-image {
+  width: 340px;
+  height: 460px;
+
+  object-fit: cover;
+
+  display: block;
+
+  border-radius: 50%;
+
+  border: 4px solid #ffffff;
+
+  outline: 1px solid #eeeeee;
+
+  box-shadow:
+    0 12px 35px rgba(0, 0, 0, 0.12);
+
+  transition: transform 0.3s ease;
+}
+
+.profile-image:hover {
+  transform: scale(1.02);
+}
+
+
+/* =====================================================
+   COMMON SECTIONS
+===================================================== */
+
+.portfolio-section {
+  padding: 100px 0;
+  background: #ffffff;
+}
+
+.light-section {
+  background: #f8f9fc;
+}
+
+.section-label {
+  color: #5146e5;
+
+  font-size: 14px;
+
+  font-weight: 800;
+
+  letter-spacing: 2px;
+
+  margin-bottom: 10px;
+}
+
+.section-title {
+  color: #111827;
+
+  font-size: clamp(34px, 4vw, 48px);
+
+  font-weight: 800;
+
+  margin-bottom: 20px;
+}
+
+.section-description {
+  color: #6b7280;
+
+  font-size: 19px;
+
+  line-height: 1.8;
+}
+
+
+/* =====================================================
+   EDUCATION / EXPERIENCE
+===================================================== */
+
+.info-card {
+  background: #ffffff;
+
+  border: 1px solid #e5e7eb;
+
+  border-radius: 15px;
+
+  padding: 35px;
+
+  box-shadow:
+    0 8px 25px rgba(0, 0, 0, 0.05);
+
+  transition: all 0.3s ease;
+}
+
+.info-card:hover {
+  transform: translateY(-5px);
+
+  border-color: #5146e5;
+
+  box-shadow:
+    0 15px 30px rgba(81, 70, 229, 0.10);
+}
+
+.info-card h3 {
+  color: #111827;
+
+  font-size: 25px;
+
+  font-weight: 700;
+
+  margin-bottom: 12px;
+}
+
+.info-card p {
+  color: #6b7280;
+
+  font-size: 18px;
+
+  margin-bottom: 8px;
+}
+
+.info-card span {
+  color: #5146e5;
+
+  font-size: 16px;
+
+  font-weight: 700;
+}
+
+
+/* =====================================================
+   SKILLS
+===================================================== */
+
+.skill-card {
+  min-height: 70px;
+
+  width: 100%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  padding: 15px;
+
+  text-align: center;
+
+  background: #ffffff;
+
+  border: 1px solid #e5e7eb;
+
+  border-radius: 12px;
+
+  color: #374151;
+
+  font-size: 16px;
+
+  font-weight: 700;
+
+  transition: all 0.3s ease;
+}
+
+.skill-card:hover {
+  color: #5146e5;
+
+  border-color: #5146e5;
+
+  transform: translateY(-5px);
+
+  box-shadow:
+    0 10px 25px rgba(81, 70, 229, 0.10);
+}
+
+
+/* =====================================================
+   PROJECTS
+===================================================== */
+
+.project-card {
+  height: 100%;
+
+  padding: 35px;
+
+  background: #ffffff;
+
+  border: 1px solid #e5e7eb;
+
+  border-radius: 15px;
+
+  box-shadow:
+    0 8px 25px rgba(0, 0, 0, 0.05);
+
+  transition: all 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-7px);
+
+  border-color: #5146e5;
+
+  box-shadow:
+    0 15px 35px rgba(81, 70, 229, 0.12);
+}
+
+.project-card h3 {
+  color: #111827;
+
+  font-size: 25px;
+
+  font-weight: 700;
+
+  margin-bottom: 15px;
+}
+
+.project-card p {
+  color: #6b7280;
+
+  font-size: 17px;
+
+  line-height: 1.7;
+
+  margin-bottom: 20px;
+}
+
+.project-card span {
+  color: #5146e5;
+
+  font-size: 14px;
+
+  font-weight: 700;
+}
+
+
+/* =====================================================
+   CONTACT
+===================================================== */
+
+.contact-section {
+  padding: 100px 0;
+
+  background: #ffffff;
+}
+
+.contact-buttons {
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  gap: 15px;
+
+  flex-wrap: wrap;
+
+  margin-top: 30px;
+}
+
+.contact-buttons .btn {
+  padding: 12px 25px;
+
+  border-radius: 8px;
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+.footer {
+  padding: 30px 0;
+
+  background: #f8f9fc;
+
+  border-top: 1px solid #eeeeee;
+
+  color: #6b7280;
+}
+
+.footer p {
+  margin: 0;
+}
+
+
+/* =====================================================
+   LARGE DESKTOP
+===================================================== */
+
+@media (min-width: 1200px) {
+
+  .hero-content {
+    padding-left: 20px;
+  }
+
+  .profile-image {
+    width: 340px;
+    height: 460px;
+  }
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 991px) {
+
+  /* Navbar */
+
+  .navbar .nav-link {
+    margin-left: 0;
+
+    padding: 12px 0;
+
+    border-bottom: 1px solid #f0f0f0;
+  }
+
+  /* Hero */
+
+  .hero-section {
+    padding: 40px 0 70px;
+  }
+
+  .hero-content {
+    max-width: 750px;
+
+    margin: 0 auto;
+
+    padding-top: 0;
+
+    text-align: center;
+  }
+
+  .hero-description {
+    margin-left: auto;
+
+    margin-right: auto;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  /* Profile */
+
+  .profile-wrapper {
+    margin-bottom: 25px;
+
+    padding: 10px;
+  }
+
+  .profile-image {
+    width: 300px;
+
+    height: 400px;
+  }
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 576px) {
+
+  /* Navbar */
+
+  .navbar {
+    min-height: 70px;
+  }
+
+  .portfolio-logo {
+    font-size: 25px;
+  }
+
+  /* Hero */
+
+  .hero-section {
+    padding: 25px 0 60px;
+  }
+
+  .hero-content {
+    padding: 0 12px;
+  }
+
+  .hero-small-title {
+    font-size: 12px;
+
+    letter-spacing: 1.5px;
+
+    margin-bottom: 15px;
+  }
+
+  .hero-title {
+    font-size: 40px;
+
+    line-height: 1.15;
+  }
+
+  .hero-subtitle {
+    font-size: 26px;
+
+    line-height: 1.3;
+  }
+
+  .hero-description {
+    font-size: 17px;
+
+    line-height: 1.6;
+  }
+
+  /* Buttons */
+
+  .hero-buttons {
+    flex-direction: column;
+
+    gap: 12px;
+
+    padding: 0 20px;
+  }
+
+  .hero-buttons .btn {
+    width: 100%;
+  }
+
+  /* Profile */
+
+  .profile-wrapper {
+    margin-bottom: 20px;
+  }
+
+  .profile-image {
+    width: 240px;
+
+    height: 320px;
+
+    border-width: 4px;
+  }
+
+  /* Sections */
+
+  .portfolio-section {
+    padding: 70px 0;
+  }
+
+  .section-title {
+    font-size: 35px;
+  }
+
+  .section-description {
+    font-size: 17px;
+  }
+
+  /* Cards */
+
+  .info-card {
+    padding: 25px;
+  }
+
+  .info-card h3 {
+    font-size: 22px;
+  }
+
+  .project-card {
+    padding: 25px;
+  }
+
+  .project-card h3 {
+    font-size: 22px;
+  }
+
+  /* Contact */
+
+  .contact-section {
+    padding: 70px 0;
+  }
+
+  .contact-buttons {
+    flex-direction: column;
+
+    width: 100%;
+  }
+
+  .contact-buttons .btn {
+    width: 100%;
+  }
+}
+
+
+/* =====================================================
+   VERY SMALL MOBILE
+===================================================== */
+
+@media (max-width: 400px) {
+
+  .hero-title {
+    font-size: 35px;
+  }
+
+  .hero-subtitle {
+    font-size: 23px;
+  }
+
+  .profile-image {
+    width: 210px;
+
+    height: 280px;
+  }
+
+  .hero-buttons {
+    padding: 0 10px;
+  }
+}
