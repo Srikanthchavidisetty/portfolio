@@ -47,7 +47,7 @@ export default function App() {
       <nav className="navbar navbar-expand-lg navbar-dark fixed-top">
         <div className="container">
           <a className="navbar-brand portfolio-logo" href="#home">
-            Srikanth
+            portfolio
           </a>
 
           <button
