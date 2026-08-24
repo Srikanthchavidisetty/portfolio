@@ -34,11 +34,14 @@ description:
 tech: "React • Vite • FastAPI • Python • Google Gemini"
   },
   {
-    category: "FRONTEND • REACT",
-    title: "Personal Portfolio",
-    description:
-      "A responsive developer portfolio designed to showcase my skills, projects, education and technical journey.",
-    tech: "React • Bootstrap • CSS • JavaScript"
+    category: "FULL STACK • WEB DEVELOPMENT",
+
+title: "TaxPro",
+
+description:
+  "A full-stack tax management application designed to simplify tax-related calculations, records and user management through an easy-to-use web interface.",
+
+tech: "React • JavaScript • Python • FastAPI • PostgreSQL"
   }
 ];
 
