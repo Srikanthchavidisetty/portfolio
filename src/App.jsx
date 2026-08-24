@@ -24,11 +24,14 @@ const projects = [
     tech: "React • Node.js • Express • MongoDB"
   },
   {
-    category: "MACHINE LEARNING • AI",
-    title: "Online Payment Fraud Detection",
-    description:
-      "A machine learning system that analyzes online payment transactions and identifies potentially fraudulent transactions.",
-    tech: "Python • Pandas • Scikit-learn • Random Forest"
+    category: "ARTIFICIAL INTELLIGENCE • GEMINI",
+
+title: "INFO-AI",
+
+description:
+  "An AI-powered  assistant that helps students ask questions, receive intelligent answers, and upload files and images for AI-powered assistance.",
+
+tech: "React • Vite • FastAPI • Python • Google Gemini"
   },
   {
     category: "FRONTEND • REACT",
