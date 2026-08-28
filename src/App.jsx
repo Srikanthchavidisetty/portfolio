@@ -1,7 +1,10 @@
 import "./App.css";
 
 const skills = [
-  "Java",
+  "n8n",
+  "Django",
+  "Flask",
+  "Postgresql",
   "Python",
   "JavaScript",
   "React",
